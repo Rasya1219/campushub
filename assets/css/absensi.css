@@ -1,0 +1,382 @@
+/* HALAMAN ABSENSI */
+.absensi-container {
+  min-height: 75vh;
+  padding: 50px 8%;
+  color: var(--text);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.absensi-container h1 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.absensi-container > p {
+  color: var(--muted);
+  margin-bottom: 30px;
+}
+
+.form-absensi {
+  width: 100%;
+  max-width: 650px;
+  padding: 28px;
+  box-sizing: border-box;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 15px;
+  box-shadow: var(--shadow);
+  text-align: left;
+  margin: 20px auto;
+}
+
+.form-absensi h2,
+.daftar-sesi h2 {
+  margin-bottom: 22px;
+  color: var(--text);
+}
+
+.form-absensi form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form-absensi label {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.form-absensi input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--bg);
+  color: var(--text);
+  box-sizing: border-box;
+  outline: none;
+}
+
+.form-absensi input:focus {
+  border-color: var(--primary);
+}
+
+.form-absensi button {
+  margin-top: 12px;
+  padding: 13px;
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.form-absensi button:hover {
+  opacity: 0.85;
+}
+
+body .absensi-container .form-absensi form button[type="submit"],
+body .absensi-container .form-absensi form a.btn {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: unset;
+  margin: 10px 0 !important;
+  padding: 14px 20px !important;
+  text-align: center !important;
+  box-sizing: border-box;
+  display: block;
+}
+
+.pesan {
+  width: 100%;
+  max-width: 650px;
+  padding: 14px;
+  margin-bottom: 20px;
+  background: var(--surface);
+  border: 1px solid var(--primary);
+  border-radius: 8px;
+  color: var(--text);
+  box-sizing: border-box;
+}
+
+.daftar-sesi {
+  width: 100%;
+  margin-top: 45px;
+  text-align: left;
+}
+
+.sesi-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 100%;
+}
+
+.sesi-card {
+  padding: 22px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 13px;
+  box-shadow: var(--shadow);
+}
+
+.sesi-card h3 {
+  margin-bottom: 15px;
+  color: var(--primary);
+}
+
+.sesi-card p {
+  margin: 9px 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.sesi-empty {
+  grid-column: 1 / -1;
+  padding: 35px;
+  text-align: center;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  color: var(--muted);
+}
+
+/* KARTU JADWAL */
+.jadwal-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 22px;
+  margin-bottom: 20px;
+}
+
+.jadwal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.jadwal-header h3,
+.pertemuan-item h4 {
+  color: var(--primary);
+}
+
+.jadwal-info,
+.pertemuan-item p {
+  color: var(--muted);
+}
+
+.pertemuan-list {
+  margin-top: 20px;
+  border-top: 1px solid var(--border);
+  padding-top: 15px;
+}
+
+.pertemuan-item {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 16px;
+  margin-top: 12px;
+}
+
+/* QR CODE */
+.qr-code {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  padding: 12px;
+  margin: 20px auto;
+  background: white;
+  border-radius: 10px;
+}
+
+.qr-code img,
+.qr-code canvas {
+  display: block;
+  max-width: 180px;
+  margin: 0 auto;
+}
+
+.qr-caption {
+  text-align: center;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+/* TOMBOL PERTEMUAN */
+.aksi-pertemuan {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 12px;
+}
+
+.btn-aksi {
+  display: inline-block;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 15px;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn-edit {
+  background: #555;
+}
+
+.btn-hapus {
+  background: #dc2626;
+}
+
+.btn-lihat {
+  display: inline-block;
+  background: var(--primary);
+  color: white;
+  padding: 11px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  list-style: none;
+}
+
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+.btn-hapus-semua {
+  margin-bottom: 18px;
+}
+
+.form-hapus {
+  display: inline;
+}
+
+/* TABEL REKAP ABSENSI */
+.daftar-hadir {
+  width: 100%;
+  overflow-x: auto;
+  margin-top: 15px;
+  border-radius: 10px;
+}
+
+.daftar-hadir table {
+  width: 100%;
+  min-width: 650px;
+  border-collapse: collapse;
+  color: var(--text);
+}
+
+.daftar-hadir th {
+  background: var(--primary);
+  color: white;
+  padding: 15px;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.daftar-hadir td {
+  padding: 14px 15px;
+  border-bottom: 1px solid var(--border);
+  color: var(--text);
+}
+
+.daftar-hadir tbody tr:hover {
+  background: var(--bg);
+}
+
+.daftar-hadir th:first-child,
+.daftar-hadir td:first-child {
+  text-align: center;
+  width: 60px;
+}
+
+.daftar-hadir td:last-child {
+  color: #22c55e;
+  font-weight: 600;
+}
+
+/* FOOTER */
+footer {
+  padding: 22px;
+  text-align: center;
+  color: var(--muted);
+  border-top: 1px solid var(--border);
+}
+
+/* ICON KALENDER DAN JAM TEMA GELAP */
+html.dark input[type="date"]::-webkit-calendar-picker-indicator,
+html.dark input[type="time"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+  opacity: 1;
+  cursor: pointer;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .sesi-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .absensi-container {
+    padding: 35px 6%;
+  }
+
+  .sesi-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-absensi {
+    padding: 20px;
+  }
+
+  .navbar {
+    flex-wrap: wrap;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .daftar-hadir {
+    margin-top: 10px;
+  }
+
+  .daftar-hadir th,
+  .daftar-hadir td {
+    padding: 11px;
+    font-size: 13px;
+  }
+}
+.aksi-pertemuan a.btn-lihat-rekap {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 15px;
+  background: #16a34a;
+  color: white !important;
+  border: 1px solid #16a34a;
+  border-radius: 8px;
+  text-decoration: none !important;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.aksi-pertemuan a.btn-lihat-rekap:hover {
+  background: #15803d;
+  border-color: #15803d;
+}

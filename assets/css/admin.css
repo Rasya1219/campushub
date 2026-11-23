@@ -1,0 +1,177 @@
+/* HALAMAN ADMIN */
+.admin-container {
+  padding: 45px 8%;
+  min-height: 70vh;
+  color: var(--text);
+}
+
+.admin-container h1 {
+  margin-bottom: 8px;
+}
+
+.admin-description {
+  color: var(--muted);
+  margin-bottom: 30px;
+}
+
+/* FORM */
+.admin-form-card,
+.admin-table-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 25px;
+  margin-bottom: 30px;
+  box-shadow: var(--shadow);
+}
+
+.admin-form-card h2,
+.admin-table-card h2 {
+  color: var(--text);
+  margin-bottom: 20px;
+}
+
+.admin-form-card label {
+  display: block;
+  color: var(--text);
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+
+.admin-form-card input,
+.admin-form-card select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 18px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--bg);
+  color: var(--text);
+  box-sizing: border-box;
+}
+
+.admin-submit {
+  width: 100%;
+  margin-top: 5px;
+}
+
+.admin-cancel {
+  display: block;
+  text-align: center;
+  margin-top: 12px;
+  text-decoration: none;
+}
+
+/* TABEL */
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  color: var(--text);
+}
+
+.admin-table th,
+.admin-table td {
+  padding: 13px;
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+}
+
+.admin-table th {
+  background: var(--primary);
+  color: white;
+}
+
+.admin-table tr:hover td {
+  background: var(--bg);
+}
+
+/* TOMBOL AKSI */
+.admin-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.admin-actions form {
+  margin: 0;
+}
+
+.edit-btn,
+.delete-btn {
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 8px 13px;
+}
+
+.edit-btn {
+  background: #2563eb;
+  color: white;
+}
+
+.delete-btn {
+  background: #dc2626;
+  color: white;
+}
+
+.admin-message {
+  background: #dcfce7;
+  color: #15803d;
+  padding: 13px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.empty-data {
+  text-align: center !important;
+  color: var(--muted);
+  padding: 25px !important;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .admin-container {
+    padding: 30px 5%;
+  }
+
+  .admin-form-card,
+  .admin-table-card {
+    padding: 18px;
+  }
+
+  .admin-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+.password-wrapper {
+  position: relative;
+  width: 100%;
+  margin-bottom: 18px;
+}
+
+.password-wrapper input {
+  width: 100%;
+  padding-right: 45px;
+  margin-bottom: 0;
+  box-sizing: border-box;
+}
+
+.password-wrapper .toggle-password {
+  position: absolute;
+  right: 10px;
+  top: 0;
+  height: 100%;
+  width: 35px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: var(--muted);
+  font-size: 17px;
+}

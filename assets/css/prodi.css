@@ -1,0 +1,258 @@
+/* =========================
+   HALAMAN PROGRAM STUDI
+========================= */
+
+.prodi-container {
+  padding: 55px 8%;
+  min-height: 70vh;
+  color: var(--text);
+}
+
+.prodi-container h1 {
+  margin-bottom: 10px;
+}
+
+.prodi-description {
+  color: var(--muted);
+  margin-bottom: 30px;
+}
+
+.prodi-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.prodi-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 25px;
+  box-shadow: var(--shadow);
+  transition: all 2s ease;
+}
+
+.prodi-card h3 {
+  margin: 15px 0 12px;
+  color: var(--text);
+}
+
+.prodi-card p {
+  color: var(--muted);
+  line-height: 1.7;
+  margin-top: 10px;
+}
+
+.prodi-code {
+  display: inline-block;
+  background: var(--primary);
+  color: white;
+  padding: 5px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.prodi-level {
+  color: var(--primary);
+  font-weight: bold;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .prodi-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .prodi-container {
+    padding: 40px 6%;
+  }
+
+  .prodi-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.admin-container {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 20px;
+  color: var(--text);
+}
+
+.admin-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 25px;
+  margin-bottom: 25px;
+  transition: all 2s ease;
+}
+
+.admin-card h2 {
+  margin-bottom: 20px;
+}
+
+.admin-card label {
+  display: block;
+  margin-top: 12px;
+  color: var(--text);
+  font-weight: 600;
+}
+
+.admin-card input,
+.admin-card select,
+.admin-card textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0 15px;
+  border: 1px solid var(--border);
+  border-radius: 7px;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.admin-table th,
+.admin-table td {
+  padding: 13px;
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+  color: var(--text);
+}
+
+.btn-delete {
+  background: #dc2626;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-edit {
+  display: inline-block;
+  background: #2563eb;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+
+.message {
+  margin-bottom: 20px;
+  padding: 12px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text);
+}
+
+@media (max-width: 700px) {
+  .admin-card {
+    overflow-x: auto;
+  }
+
+  .admin-table {
+    font-size: 12px;
+    min-width: 650px;
+  }
+}
+/* PERBAIKAN HALAMAN CRUD PRODI */
+.admin-container {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 20px;
+  color: var(--text);
+}
+
+.admin-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 25px;
+  margin: 25px 0;
+  box-shadow: var(--shadow);
+}
+
+.admin-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.admin-card label {
+  display: block;
+  margin-top: 12px;
+  font-weight: 600;
+}
+
+.admin-card input,
+.admin-card select,
+.admin-card textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 0 0 12px;
+  box-sizing: border-box;
+  border: 1px solid var(--border);
+  border-radius: 7px;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.admin-table th {
+  background: var(--primary);
+  color: white;
+  padding: 13px;
+  text-align: left;
+}
+
+.admin-table td {
+  padding: 13px;
+  border-bottom: 1px solid var(--border);
+  color: var(--text);
+}
+
+.admin-table tr:hover {
+  background: var(--bg);
+}
+
+.btn-edit {
+  display: inline-block;
+  background: #2563eb;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.btn-delete {
+  background: #dc2626;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+@media (max-width: 700px) {
+  .admin-card {
+    overflow-x: auto;
+  }
+
+  .admin-table {
+    min-width: 650px;
+  }
+}

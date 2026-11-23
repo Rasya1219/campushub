@@ -1,0 +1,112 @@
+/* HALAMAN DOSEN */
+
+.dosen-container {
+  min-height: 70vh;
+  padding: 55px 8%;
+  color: var(--text);
+}
+
+.dosen-container h1 {
+  margin-bottom: 10px;
+}
+
+.dosen-description {
+  color: var(--muted);
+  margin-bottom: 30px;
+}
+
+.dosen-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.dosen-card {
+  padding: 25px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 15px;
+  box-shadow: var(--shadow);
+  transition: all 0.3s ease;
+}
+
+.dosen-card:hover {
+  transform: translateY(-5px);
+}
+
+.dosen-avatar {
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--primary);
+  color: white;
+  border-radius: 50%;
+  font-size: 23px;
+  font-weight: bold;
+  margin-bottom: 18px;
+}
+
+.dosen-card h3 {
+  color: var(--text);
+  margin-bottom: 12px;
+}
+
+.dosen-card p {
+  color: var(--muted);
+  font-size: 14px;
+  margin-bottom: 10px;
+  overflow-wrap: anywhere;
+}
+
+.dosen-nip {
+  font-weight: 600;
+}
+
+.dosen-prodi {
+  display: inline-block;
+  background: var(--primary);
+  color: white;
+  padding: 7px 12px;
+  border-radius: 7px;
+  font-size: 13px;
+  margin: 10px 0;
+}
+
+.dosen-level {
+  display: block;
+  color: var(--primary);
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.dosen-empty {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 50px 20px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 15px;
+}
+
+.dosen-empty p {
+  color: var(--muted);
+  margin-top: 10px;
+}
+
+@media (max-width: 900px) {
+  .dosen-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .dosen-container {
+    padding: 40px 6%;
+  }
+
+  .dosen-grid {
+    grid-template-columns: 1fr;
+  }
+}
